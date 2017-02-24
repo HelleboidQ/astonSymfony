@@ -9,6 +9,7 @@
 {% endfor %}
 
 
+    <a href="{{ path('fos_user_security_login') }}">Login</a> | 
     <a href="{{ path('post_new') }}">Nouveau Post</a>
     
     <h1>Liste des Posts</h1>
@@ -35,7 +36,7 @@
                         {% if post.getImage %}
                         <img style="max-width:75px;" src='{{ asset("uploads/pictures") }}/{{ post.image }}' /> 
                     {% else %}
-                        <i>null</i>
+                        <i>Pas d'image</i>
                     {% endif %}
                        </td> 
                 <td>  
